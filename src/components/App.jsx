@@ -24,7 +24,6 @@ export const App = () => {
 
 
   const formSubmitHandler = data => {
-    console.log(data)
       if (contacts.some(contact =>  contact.name.toLowerCase() === data.name.toLowerCase())) {
         alert("Hello");
       } else {

@@ -6,13 +6,13 @@ export const ContactForm = ({onSubmit}) => {
   const [number, setNumber] = useState('');
 
   const handleInputChange = e => { 
-    console.log(e.target)
-    if (e.currentTarget.name === 'name') {
-      setName(e.target.value);
+    const {name, value } = e.target
+    if (name === 'name') {
+      setName(value);
     }
 
-    if (e.currentTarget.name === 'number') {
-      setNumber(e.target.value);
+    if (name === 'number') {
+      setNumber(value);
     }
   }
 
